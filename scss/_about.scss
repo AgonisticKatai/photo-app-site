@@ -1,0 +1,53 @@
+section {
+  .title-gamma h1 {
+    margin: 0;
+    color: white;
+    background-color: $green-site;
+    padding: 20px 25px;
+    @media (min-width: 900px) {
+      & {
+        padding-left: 90px;
+      }
+    }
+    @media (min-width: 1400px) {
+      & {
+        padding-left: 127px;
+      }
+    }
+  }
+  .about-text {
+    h2 {
+      margin: 0;
+      padding: 40px 0 20px 0;
+    }
+    p {
+      margin: 0;
+      padding-bottom: 20px;
+    }
+  }
+  .product {
+    margin-bottom: 60px;
+    .product-thumbnail {
+      & {
+        border: none;
+        padding: 0;
+      }
+      img {
+        padding: 54px;
+      }
+      .product-text {
+        padding: 0;
+      }
+    }
+    .product-text {
+      padding: 0;
+    }
+    @media (min-width: 1100px) {
+      & {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+

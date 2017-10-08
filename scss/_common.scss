@@ -1,0 +1,81 @@
+.nav-gamma .gamma-button {
+  color: $green-site;
+}
+.footer-list-features {
+  background-color: $green-site;
+  color: white;
+  .container {
+    padding: 40px;
+  }
+  section {
+    font-size: 20px;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+%element-footer {
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+  ul {
+    @extend %element-footer;
+    & li {
+      display: inline;
+      padding: 0 5px;
+      & .footer-a {
+        color: white;
+      }
+    }
+    @media (min-width: 580px) {
+      & {
+        text-align: left;
+      }
+    }
+    @media (min-width: 900px) {
+      & {
+        list-style: none;
+        padding-left: 70px;
+      }
+    }
+    @media (min-width: 1100px) {
+      & {
+        display: inline;
+        padding-right: 400px;
+      }
+    }
+  }
+  p {
+    @extend %element-footer;
+    @media (min-width: 580px) {
+      & {
+        text-align: right;
+        margin-top: 0;
+      }
+    }
+    @media (min-width: 900px) {
+      & {
+        padding-right: 70px;
+      }
+    }
+    @media (min-width: 1100px) {
+      & {
+        display: inline;
+      }
+    }
+  }
+  @media (min-width: 1100px) {
+    & {
+      text-align: center;
+    }
+  }
+}
